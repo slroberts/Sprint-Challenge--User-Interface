@@ -331,7 +331,6 @@ footer nav a {
 
 .about-boxes {
   display: flex;
-  width: 800px;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 18px;
@@ -339,7 +338,7 @@ footer nav a {
 }
 
 .about-box__item {
-  width: 48%;
+  width: 370px;
   border-bottom: 1px dashed black;
   padding: 30px 0 20px;
 }
@@ -361,6 +360,37 @@ footer nav a {
   font-size: 16px;
 }
 
+/* Blog Page CSS */
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.blog-article {
+  padding: 30px 0;
+  border-bottom: 1px dashed black;
+}
+
+.blog-article:first-child {
+  padding-top: 0;
+}
+
+.blog-article:last-child {
+  border-bottom: none;
+}
+
+.blog-article button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: coral;
+  color: white;
+  border: none;
+}
+
 /* Respnsive CSS */
 @media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
 }
