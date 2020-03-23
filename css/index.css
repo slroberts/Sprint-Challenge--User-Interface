@@ -444,10 +444,11 @@ footer nav a {
   .about-box__item:nth-child(3),
   .about-box__item:nth-child(4) {
     margin: 0;
+    margin-right: 20px;
   }
 
-  .about-box__item:nth-child(4) {
-    margin-bottom: 50px;
+  .about-content__bottom {
+    margin-top: 50px;
   }
 
   .contact {
