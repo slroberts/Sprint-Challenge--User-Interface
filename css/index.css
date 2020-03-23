@@ -175,11 +175,16 @@ header {
   color: black;
 }
 
-.hero-banner {
+.hero-banner,
+.about-banner {
   background-image: url(/img/jumbo.jpg);
   width: 800px;
   height: 153px;
   margin-bottom: 20px;
+}
+
+.about-banner {
+  background-image: url(/img/jumbo-about.png);
 }
 
 .top-content {
@@ -295,3 +300,46 @@ footer nav a {
   color: white;
   text-decoration: none;
 }
+
+/* About Page CSS */
+.about-content__top {
+  padding: 10px 25px 25px;
+}
+
+.about-content__bottom {
+  padding: 0 18px 40px;
+}
+
+.about-boxes {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 18px;
+  border-top: 1px dashed black;
+}
+
+.about-box__item {
+  width: 48%;
+  border-bottom: 1px dashed black;
+  padding: 30px 0 20px;
+}
+
+.about-box__item:nth-child(3),
+.about-box__item:nth-child(4) {
+  margin: 30px 0 50px;
+}
+
+.about-box__item h2 {
+  margin-top: 10px;
+}
+
+.about-box__item button {
+  margin-top: 18px;
+  padding: 8px 22px 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 16px;
+}
+/* 
+  padding-bottom: 20px; */
