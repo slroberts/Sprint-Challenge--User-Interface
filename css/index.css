@@ -430,10 +430,15 @@ footer nav a {
   .hero-banner,
   .about-banner {
     width: 100%;
+    background-size: cover;
   }
 
   .about-boxes {
     justify-content: center;
+  }
+
+  .about-box__item {
+    margin-right: 20px;
   }
 
   .about-box__item:nth-child(3),
