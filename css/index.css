@@ -480,4 +480,8 @@ footer nav a {
   .bottom-content {
     flex-flow: column wrap;
   }
+
+  .bottom-content .text-container {
+    margin-bottom: 20px;
+  }
 }
