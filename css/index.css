@@ -414,6 +414,7 @@ footer nav a {
   margin-top: 10px;
   padding-left: 10px;
   width: 100%;
+  border: solid thin black;
 }
 
 /* Respnsive CSS */
