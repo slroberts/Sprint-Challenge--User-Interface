@@ -390,6 +390,10 @@ footer nav a {
   border: none;
 }
 /* Contact Page CSS */
+.contact {
+  padding: 30px;
+}
+
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -449,10 +453,6 @@ footer nav a {
 
   .about-content__bottom {
     margin-top: 50px;
-  }
-
-  .contact {
-    padding: 0 30px;
   }
 
   footer nav {
