@@ -3,144 +3,487 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
 }
 
 p {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .container {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  /* height: 80px; */
+  padding-top: 20px;
+  padding: 20px 0 40px;
+}
+
+.nav-list {
+  display: flex;
+  width: 740px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  animation: skew 200ms ease-in forwards;
+}
+
+.nav-link:hover:after {
+  content: ".";
+}
+
+@keyframes skew {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    color: cadetblue;
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+.hero-banner,
+.about-banner {
+  background-image: url(/img/jumbo.jpg);
+  width: 800px;
+  height: 153px;
+  margin-bottom: 20px;
+}
+
+.about-banner {
+  background-image: url(/img/jumbo-about.png);
 }
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+  padding: 0 2%;
+  margin-bottom: 0;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 12.5%;
+  height: 100px;
+  background: black;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teal {
+  background: teal !important;
+}
+
+.gold {
+  background: gold !important;
+}
+
+.cadetblue {
+  background: cadetblue !important;
+}
+
+.coral {
+  background: coral !important;
+}
+
+.crimson {
+  background: crimson !important;
+}
+
+.forestgreen {
+  background: forestgreen !important;
+}
+
+.darkorchid {
+  background: darkorchid !important;
+}
+
+.hotpink {
+  background: hotpink !important;
+}
+
+.indigo {
+  background: indigo !important;
+}
+
+.dodgerblue {
+  background: dodgerblue !important;
 }
 
 .bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+  display: flex;
+  margin: 0 2% 20px;
+  justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+  padding-right: 4%;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 footer {
-    width: 100%;
-    background: black;
+  width: 100%;
+  background: black;
 }
 
 footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
 }
 
 footer nav a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* About Page CSS */
+.about-content__top {
+  padding: 10px 25px 25px;
+}
+
+.about-content__bottom {
+  padding: 0 18px 40px;
+}
+
+.about-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 18px;
+  border-top: 1px dashed black;
+}
+
+.about-box__item {
+  width: 370px;
+  border-bottom: 1px dashed black;
+  padding: 30px 0 20px;
+}
+
+.about-box__item:nth-child(3),
+.about-box__item:nth-child(4) {
+  margin: 30px 0 50px;
+}
+
+.about-box__item h2 {
+  margin-top: 10px;
+}
+
+.about-box__item button {
+  margin-top: 18px;
+  padding: 8px 22px 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* Blog Page CSS */
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 30px;
+}
+.blog > h1,
+.blog-article {
+  padding: 30px 0;
+  border-bottom: 1px dashed black;
+}
+
+.blog-article:first-child {
+  padding-top: 0;
+}
+
+.blog-article:last-child {
+  border-bottom: none;
+}
+
+.blog-article button,
+.contact-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: coral;
+  color: white;
+  border: none;
+}
+/* Contact Page CSS */
+.contact {
+  padding: 30px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px 0;
+  border-top: 1px dashed black;
+}
+
+.form-feild,
+.form-feild input,
+.form-feild textarea {
+  padding: 10px 0;
+}
+
+.form-feild input,
+.form-feild textarea {
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  border: solid thin black;
+}
+
+/* Respnsive CSS */
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 0;
+  }
+
+  .nav-list {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hero-banner,
+  .about-banner {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .about-boxes {
+    justify-content: center;
+  }
+
+  .about-box__item {
+    margin-right: 20px;
+  }
+
+  .about-box__item:nth-child(3),
+  .about-box__item:nth-child(4) {
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .about-content__bottom {
+    margin-top: 50px;
+  }
+
+  footer nav {
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  .top-content .text-container {
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 20px;
+  }
+
+  .bottom-content {
+    flex-flow: column wrap;
+  }
+
+  .bottom-content .text-container {
+    margin-bottom: 20px;
+  }
 }
